@@ -45,7 +45,6 @@ class ProductTypeExtensionTest extends TestCase
             ]])
             ->willReturn($this->builder,[]);
 
-
         $this->productType->buildForm($this->builder, []);
     }
 

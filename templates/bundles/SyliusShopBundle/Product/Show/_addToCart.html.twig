@@ -19,7 +19,7 @@
         <div class="">
         <div class="">
             <h2> Color is : {{ product.color }} </h2>
-
+            <br><br/>
         </div>
     {% endif %}
     {{ sylius_template_event('sylius.shop.product.show.add_to_cart_form', {'product': product, 'order_item': order_item, 'form': form}) }}

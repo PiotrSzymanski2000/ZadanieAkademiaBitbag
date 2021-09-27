@@ -6,7 +6,7 @@ namespace App\Tests\Behat\Context;
 use App\Tests\Behat\Pages\CreateProductPageInterface;
 use Behat\Behat\Context\Context;
 
-class ProductContext implements Context
+final class ProductContext implements Context
 {
     /**
      * @var CreateProductPageInterface
@@ -21,7 +21,7 @@ class ProductContext implements Context
     /**
      * @When I set color to :color
      */
-    public function iSetColorTo($color)
+    public function iSetColorTo($color): void
     {
         $this->creteProductPage->setColor($color);
     }
