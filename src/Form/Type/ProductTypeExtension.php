@@ -8,7 +8,7 @@ use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-final class ProductTypeExtension extends AbstractTypeExtension
+final class ProductTypeExtension extends AbstractTypeExtension implements ProductTypeExtensionInterface
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
